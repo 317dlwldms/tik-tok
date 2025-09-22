@@ -1,0 +1,1105 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url(../font/PretendardVariable.woff2) format(woff2-variations);
+}
+.font-didot {
+  font-family: "linotype-didot-headline", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-wonchuri {
+  font-family: "high1-wonchuri-body", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-wonchuri-bold {
+  font-family: "high1-wonchuri-body", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-overtime {
+  font-family: "overtime-lcd-pro", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #F0F2F5;
+  color: #222;
+  font-size: 16px;
+  font-family: "Pretendard Variable", "Pretendard", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 400;
+  font-style: none;
+  width: 100%;
+}
+
+a,
+a:active {
+  color: #222;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  position: fixed;
+  margin: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  z-index: 10;
+}
+header h1 {
+  font-size: 2rem;
+}
+header nav {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+header nav ul {
+  display: flex;
+  gap: 1rem;
+}
+header nav ul li a {
+  font-size: 0.875rem;
+}
+
+.classic {
+  background: #FAF9F6;
+}
+.classic .wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.classic .wrapper .frame-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 92%;
+  max-width: 700px;
+  min-width: 350px;
+  aspect-ratio: 1/1;
+}
+.classic .wrapper .frame-wrap .frame-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  box-shadow: 20px 20px 38px 5px rgba(0, 0, 0, 0.35), 5px 2px 8px 3px rgba(0, 0, 0, 0.25);
+}
+.classic .wrapper .frame-wrap .frame-svg img {
+  width: 100%;
+}
+.classic .wrapper .frame-wrap .lines-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.classic .wrapper .frame-wrap .lines-wrap > div {
+  position: absolute;
+}
+.classic .wrapper .frame-wrap .lines-wrap .line {
+  height: 50%;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: bottom center;
+}
+.classic .wrapper .frame-wrap .lines-wrap .line svg {
+  bottom: -20.5%;
+  height: 100%;
+}
+.classic .wrapper .frame-wrap .lines-wrap .button {
+  width: 2%;
+  max-width: 13px;
+  aspect-ratio: 1/1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.classic .wrapper .frame-wrap .lines-wrap .button svg {
+  width: 100%;
+  height: 100%;
+}
+.classic .wrapper .frame-wrap .classic-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.simple {
+  min-height: 100vh;
+  background: #E5E8EB;
+  font-family: "high1-wonchuri-body", sans-serif;
+}
+.simple .wrapper {
+  max-width: 550px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.simple .wrapper .boxs {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 50px;
+  width: 100%;
+  box-shadow: -10px -10px 16px 2px rgba(255, 255, 255, 0.65), 10px 10px 25px 2px rgba(0, 0, 0, 0.15);
+}
+.simple .wrapper > .boxs {
+  border-radius: 80px;
+}
+.simple .wrapper .date-time-spotify {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 2rem 1rem 1rem 1rem;
+}
+.simple .wrapper .date-time-spotify .date p {
+  padding: 0 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+.simple .wrapper .date-time-spotify .time p {
+  padding: 0 1rem;
+  font-size: 2rem;
+  opacity: 0.85;
+}
+.simple .wrapper .date-time-spotify .spotify-box {
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 12px;
+  padding-left: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.simple .wrapper .date-time-spotify .spotify-box .text {
+  flex: 1 1 auto;
+}
+.simple .wrapper .date-time-spotify .spotify-box .text > p {
+  font-size: 0.875rem;
+}
+.simple .wrapper .date-time-spotify .spotify-box .text .spotify-text-svg {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.simple .wrapper .date-time-spotify .spotify-box .text .spotify-text-svg .svg {
+  flex: 0 0 auto;
+}
+.simple .wrapper .date-time-spotify .spotify-box .text .spotify-text-svg > p {
+  position: absolute;
+  width: 100%;
+  padding-left: 30px;
+  font-size: 1.125rem;
+  flex: 1 1 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.simple .wrapper .clock-playbox {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.simple .wrapper .clock-playbox .clock-wrap {
+  width: 55%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  box-shadow: -10px -10px 16px 2px rgba(255, 255, 255, 0.65) inset, 10px 10px 25px 2px rgba(0, 0, 0, 0.15) inset;
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock {
+  width: 100%;
+  height: 100%;
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock > div {
+  position: absolute;
+  width: 50%;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .horizon-vertical-line {
+  width: 48%;
+  transform: translateY(-50%);
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .horizon-vertical-line .line {
+  position: absolute;
+  padding-left: 85%;
+  transform-origin: top left;
+  transform: rotate(0deg);
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .horizon-vertical-line .line > div {
+  width: 16px;
+  height: 1px;
+  background: #222;
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .horizon-vertical-line .line:nth-child(2) {
+  transform: rotate(90deg);
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .horizon-vertical-line .line:nth-child(3) {
+  transform: rotate(180deg);
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .horizon-vertical-line .line:nth-child(4) {
+  transform: rotate(270deg);
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .horizon-timer {
+  width: 100%;
+  padding: 0 12%;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .horizon-timer p {
+  font-size: 0.875rem;
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .sec {
+  left: 50%;
+  width: 1px;
+  height: 32%;
+  background: #222;
+  transform: translateX(-50%) rotate(10deg);
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .min {
+  left: 50%;
+  width: 3px;
+  height: 30%;
+  background: #222;
+  border-radius: 3px;
+  transform: translateX(-50%) rotate(5deg);
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .hour {
+  left: 50%;
+  width: 4px;
+  height: 20%;
+  border-radius: 4px;
+  border: 1px solid #222;
+  background: #E5E8EB;
+  transform: translate(-50%) rotate(0deg);
+}
+.simple .wrapper .clock-playbox .clock-wrap .clock .circle {
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #222;
+  background: #F0F2F5;
+  border-radius: 8px;
+}
+.simple .wrapper .clock-playbox .playbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.simple .wrapper .clock-playbox .playbox .album-cover {
+  width: 100%;
+}
+.simple .wrapper .clock-playbox .playbox .album-cover .cover-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 1.5rem;
+  background: linear-gradient(224deg, #FFB7B7 14.4%, #AED4FF 84.04%);
+  box-shadow: -8px -8px 10px 1px rgba(255, 255, 255, 0.6), 8px 8px 10px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.simple .wrapper .clock-playbox .playbox .album-cover .cover-img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.simple .wrapper .clock-playbox .playbox .album-cover .album-like {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  opacity: 0.75;
+}
+.simple .wrapper .clock-playbox .playbox .spotify-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.simple .wrapper .clock-playbox .playbox .spotify-svg .spotify-play, .simple .wrapper .clock-playbox .playbox .spotify-svg .spotify-reset {
+  padding: 8px;
+  border-radius: 100px;
+  background: #E5E8EB;
+  box-shadow: -4px -4px 8px 1px rgba(255, 255, 255, 0.6), 4px 4px 8px 1px rgba(0, 0, 0, 0.1);
+}
+.simple .wrapper .clock-playbox .playbox .spotify-svg .spotify-reset {
+  cursor: pointer;
+}
+.simple .wrapper .clock-playbox .playbox .spotify-svg .svg {
+  width: 25px;
+  height: 25px;
+}
+.simple .wrapper .clock-playbox .playbox .spotify-svg .svg svg {
+  width: 100%;
+}
+.simple .wrapper .daily-wrap {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.simple .wrapper .daily-wrap .dailybox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.simple .wrapper .daily-wrap .daily-svg {
+  width: 30%;
+  display: flex;
+  padding: 0.75rem 0;
+  border-radius: 100px;
+  justify-content: center;
+  height: 100%;
+  box-shadow: -10px -10px 16px 2px rgba(255, 255, 255, 0.65) inset, 10px 10px 25px 2px rgba(0, 0, 0, 0.15) inset;
+}
+.simple .wrapper .daily-wrap .daily-svg > div {
+  width: 35px;
+  height: 35px;
+}
+.simple .wrapper .daily-wrap .daily-svg > div svg {
+  width: 100%;
+  height: 100%;
+}
+.simple .wrapper .daily-wrap .daily-svg p {
+  font-size: 0.875rem;
+}
+.simple .wrapper .daily-wrap .daily-textbox {
+  margin: 0 auto;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.simple .wrapper .daily-wrap .daily-textbox .daily-text p {
+  font-size: 0.875rem;
+}
+.simple .wrapper .daily-wrap .daily-textbox .daily-text p span {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.simple .wrapper .daily-wrap .daily-textbox .weather-temp {
+  display: flex;
+  gap: 1.25rem;
+}
+.simple .wrapper .daily-wrap .daily-textbox .weather-temp > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+.simple .wrapper .daily-wrap .daily-textbox .weather-temp > div .temp, .simple .wrapper .daily-wrap .daily-textbox .weather-temp > div .weather {
+  font-size: 1.5rem;
+}
+.simple .wrapper .daily-wrap .daily-textbox .weather-temp > div .text {
+  margin-bottom: 3px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  padding: 3px 10px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.casual {
+  color: #F0F2F5;
+}
+.casual svg {
+  width: 100%;
+  height: 100%;
+}
+.casual svg path {
+  stroke: #F0F2F5;
+  mix-blend-mode: overlay;
+}
+.casual .move {
+  animation: spotifyMove 7s linear infinite;
+}
+.casual .moves {
+  animation: spotifyMove 11s linear infinite;
+}
+.casual .apple-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 520px;
+  min-width: 330px;
+  aspect-ratio: 5/6;
+  overflow: hidden;
+}
+.casual .apple-wrapper .apple-watchbox {
+  position: absolute;
+  padding: 0 7%;
+  width: 80%;
+  aspect-ratio: 5/5.8;
+  border-radius: 23%;
+  background: #151515;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.casual .apple-wrapper .apple-watchbox .weather-box {
+  width: 90%;
+  margin: -17% auto 1rem;
+  aspect-ratio: 6/3;
+  border-radius: 100%;
+  background: linear-gradient(-90deg, #151515 0%, #D2FF58 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+.casual .apple-wrapper .apple-watchbox .weather-box .weather-wrap {
+  position: absolute;
+  width: 100%;
+  margin-bottom: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+.casual .apple-wrapper .apple-watchbox .weather-box .daily-svg {
+  width: 8vw;
+  height: 8vw;
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 30px;
+  min-height: 30px;
+}
+.casual .apple-wrapper .apple-watchbox .weather-box .daily-svg .svg {
+  width: 100%;
+  height: 100%;
+}
+.casual .apple-wrapper .apple-watchbox .weather-box .weather-text .temp {
+  font-size: 1.25rem;
+  font-weight: 700;
+  mix-blend-mode: overlay;
+}
+.casual .apple-wrapper .apple-watchbox .weather-box .weather-text .weather {
+  font-size: 1.5rem;
+  font-weight: 700;
+  mix-blend-mode: overlay;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: end;
+  margin-bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box .border {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  width: 100%;
+  border-bottom: 1px solid #F0F2F5;
+  z-index: 51;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box .spotifynow {
+  background: #151515;
+  z-index: 50;
+  margin-right: 10px;
+  flex: 0 0 1;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box .spotifynow p {
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  border: 1px solid #F0F2F5;
+  flex: 1;
+  white-space: nowrap;
+  font-size: 0.875rem;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box .spotify-title-artist {
+  display: inline;
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: visible;
+  gap: 6px;
+  margin-bottom: 2px;
+  width: auto;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box .spotify-title-artist .spotify-wrap {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  overflow: auto;
+  width: max-content;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box .spotify-title-artist .svg {
+  width: 20px;
+  height: 20px;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box .spotify-title-artist .svg svg path {
+  mix-blend-mode: normal;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box .spotify-title-artist .spotify-song {
+  overflow: hidden;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-box .spotify-title-artist .spotify-song p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-svgs {
+  position: absolute;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 101;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-svgs > a,
+.casual .apple-wrapper .apple-watchbox .spotify-svgs > div {
+  padding: 6px;
+  border: 1px solid #F0F2F5;
+  border-radius: 100%;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-svgs > a .svg,
+.casual .apple-wrapper .apple-watchbox .spotify-svgs > div .svg {
+  width: 22px;
+  height: 22px;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-svgs > div {
+  cursor: pointer;
+}
+.casual .apple-wrapper .apple-watchbox .spotify-svgs svg path {
+  mix-blend-mode: normal;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box {
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-svg svg path {
+  mix-blend-mode: normal;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 1rem;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-text .date {
+  top: -0.75rem;
+  margin-bottom: 2rem;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-text .date p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.25rem;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-text .date p span {
+  font-size: 1.75rem;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-text .time {
+  padding: 2px 8px;
+  background: #454545;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5) inset;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-text .time p {
+  display: flex;
+  font-size: 1rem;
+  margin-top: 3px;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-text .time p span {
+  font-size: 2.25rem;
+  margin-top: -5px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-text .time p span .blink {
+  animation: casualTimeBlink 1s linear infinite;
+  transition: all 0s;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-liner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-liner > div {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: 42%;
+  transform-origin: bottom center;
+}
+.casual .apple-wrapper .apple-watchbox .clock-box .clock-liner .center {
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  border: 2px solid #FAF9F6;
+  background: #151515;
+}
+.casual .apple-wrapper .apple-watch {
+  width: 100%;
+  pointer-events: none;
+  z-index: 100;
+}
+.casual .apple-wrapper .apple-watch img {
+  width: 100%;
+}
+
+.tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 250px;
+  padding: 4px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  pointer-events: none;
+  transform: translate(10px, 10px);
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  z-index: 990;
+  display: flex;
+  gap: 5px;
+}
+
+.front-alert {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(250, 249, 246, 0.7);
+  backdrop-filter: brightness(0.9) blur(8px);
+  -webkit-backdrop-filter: brightness(0.9) blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.front-alert .alertbox {
+  width: 90%;
+  max-width: 350px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  border-radius: 30px;
+  background: #FAF9F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border: 1px solid #ddd;
+  box-shadow: 10px 10px 25px 2px rgba(0, 0, 0, 0.15);
+}
+.front-alert .alertbox p {
+  font-size: 0.875rem;
+}
+.front-alert p.alerttitle {
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+.front-alert button {
+  width: 100%;
+  margin: 1rem auto 0;
+  padding: 0.75rem 0;
+  border-radius: 200px;
+  border: 1px solid #ddd;
+  background: #FAF9F6;
+  cursor: pointer;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.front-alert button p {
+  color: #222;
+}
+.front-alert button .but-svg {
+  width: 18px;
+  height: 18px;
+}
+.front-alert button .but-svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.front-alert.active {
+  display: none;
+}
+
+.daily-denied {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  left: 0;
+  padding: 0.5rem;
+  line-height: 20px;
+  display: none;
+  z-index: 999;
+}
+.daily-denied p {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.daily-denied.active {
+  display: block;
+}
+
+@keyframes lineShadow {
+  0% {
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.5));
+  }
+  100% {
+    filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.5));
+  }
+}
+@keyframes spotifyMove {
+  0% {
+    transform: translateX(0%);
+  }
+  49% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-105%);
+    opacity: 0;
+  }
+  51% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  52% {
+    transform: translateX(90%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes casualTimeBlink {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    margin: 1rem 1.5rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .weather-box {
+    margin-top: -13%;
+    width: 75%;
+  }
+  .casual .apple-wrapper .apple-watchbox .weather-box .weather-text .temp {
+    font-size: 2.8vw;
+  }
+  .casual .apple-wrapper .apple-watchbox .weather-box .weather-text .weather {
+    font-size: 3.2vw;
+  }
+  .casual .apple-wrapper .apple-watchbox .spotify-box {
+    width: 95%;
+    margin-bottom: 1.25rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .spotify-box .spotifynow p {
+    padding: 3px 10px;
+    font-size: 0.75rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .spotify-box .spotify-title-artist .svg {
+    width: 15px;
+    height: 15px;
+  }
+  .casual .apple-wrapper .apple-watchbox .spotify-box .spotify-title-artist .spotify-song p {
+    font-size: 0.875rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .spotify-svgs > a, .casual .apple-wrapper .apple-watchbox .spotify-svgs > div {
+    padding: 5px;
+  }
+  .casual .apple-wrapper .apple-watchbox .spotify-svgs > a .svg, .casual .apple-wrapper .apple-watchbox .spotify-svgs > div .svg {
+    width: 20px;
+    height: 20px;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box {
+    width: 95%;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .date {
+    top: -1rem;
+    margin-bottom: 0.5rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .date p {
+    font-size: 1rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .date p span {
+    font-size: 1.5rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .time p {
+    font-size: 0.875rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .time p span {
+    font-size: 1.5rem;
+    margin-top: -3px;
+  }
+  .simple .wrapper {
+    min-width: 300px;
+    width: 90%;
+    max-width: 480px;
+    gap: 1.75rem;
+  }
+  .simple .wrapper .boxs {
+    padding: 1.75rem;
+  }
+  .simple .wrapper .clock-playbox {
+    padding-top: 1.75rem;
+    gap: 1.75rem;
+  }
+  .simple .wrapper .clock-playbox .clock-wrap .clock .horizon-timer p {
+    font-size: 0.75rem;
+  }
+  .simple .wrapper .clock-playbox .clock-wrap .clock .horizon-vertical-line .line > div {
+    width: 10px;
+  }
+  .simple .wrapper .clock-playbox .playbox {
+    gap: 0.75rem;
+  }
+  .simple .wrapper .clock-playbox .playbox .spotify-svg .spotify-play, .simple .wrapper .clock-playbox .playbox .spotify-svg .spotify-reset {
+    padding: 7px;
+  }
+  .simple .wrapper .clock-playbox .playbox .spotify-svg .spotify-play .svg, .simple .wrapper .clock-playbox .playbox .spotify-svg .spotify-reset .svg {
+    width: 20px;
+    height: 20px;
+  }
+  .simple .wrapper .clock-playbox .playbox .spotify-svg .spotify-play svg, .simple .wrapper .clock-playbox .playbox .spotify-svg .spotify-reset svg {
+    width: 100%;
+    height: 100%;
+  }
+  .simple .wrapper .date-time-spotify {
+    padding: 1.5rem 1rem 1rem 1rem;
+    gap: 10px;
+  }
+  .simple .wrapper .date-time-spotify .date p {
+    font-size: 1.875rem;
+  }
+  .simple .wrapper .date-time-spotify .time p {
+    font-size: 1.5rem;
+  }
+  .simple .wrapper .date-time-spotify .spotify-box {
+    padding: 10px 10px 10px 20px;
+  }
+  .simple .wrapper .date-time-spotify .spotify-box .text .spotify-text-svg .svg {
+    width: 20px;
+    height: 20px;
+  }
+  .simple .wrapper .date-time-spotify .spotify-box .text .spotify-text-svg .svg svg {
+    width: 100%;
+    height: 100%;
+  }
+  .simple .wrapper .date-time-spotify .spotify-box .text .spotify-text-svg > p {
+    font-size: 1rem;
+  }
+  .simple .wrapper .daily-wrap {
+    padding: 1rem;
+  }
+  .simple .wrapper .daily-wrap .daily-svg .svg {
+    width: 40px;
+    height: 40px;
+  }
+  .simple .wrapper .daily-wrap .daily-textbox {
+    padding-right: 0;
+  }
+  .simple .wrapper .daily-wrap .daily-textbox .weather-temp > div .temp, .simple .wrapper .daily-wrap .daily-textbox .weather-temp > div .weather {
+    font-size: 1.25rem;
+  }
+  .daily-denied {
+    bottom: 1rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  header {
+    gap: 0.75rem;
+  }
+  header h1 {
+    font-size: 1.75rem;
+  }
+  header nav ul {
+    gap: 0.75rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .weather-box .weather-text .temp {
+    font-size: 0.75rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .weather-box .weather-text .weather {
+    font-size: 0.875rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .spotify-box .spotify-title-artist .spotify-song p {
+    font-size: 0.75rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .spotify-svgs > a, .casual .apple-wrapper .apple-watchbox .spotify-svgs > div {
+    padding: 4px;
+  }
+  .casual .apple-wrapper .apple-watchbox .spotify-svgs > a .svg, .casual .apple-wrapper .apple-watchbox .spotify-svgs > div .svg {
+    width: 16px;
+    height: 16px;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .date {
+    top: -0.5rem;
+    margin-bottom: 1rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .date p {
+    font-size: 0.875rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .date p span {
+    font-size: 1.25rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .time p {
+    font-size: 0.875rem;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-text .time p span {
+    font-size: 1.25rem;
+    margin-top: -2px;
+  }
+  .casual .apple-wrapper .apple-watchbox .clock-box .clock-liner .center {
+    width: 7px;
+    height: 7px;
+    border: 1px solid #FAF9F6;
+  }
+  .simple .wrapper {
+    width: calc(100% - 2rem);
+    min-width: 310px;
+  }
+  .simple .wrapper .boxs {
+    padding: 1.5rem;
+  }
+  .simple .wrapper .date-time-spotify {
+    padding: 1.5rem 0.875rem 0.875rem 0.875rem;
+  }
+  .simple .wrapper .date-time-spotify .date p {
+    font-size: 1.5rem;
+  }
+  .simple .wrapper .date-time-spotify .time p {
+    font-size: 1.25rem;
+  }
+  .simple .wrapper .date-time-spotify .spotify-box .text > p > span, .simple .wrapper .date-time-spotify .spotify-box .spotify-artist {
+    display: none;
+  }
+  .simple .wrapper .clock-playbox .playbox {
+    gap: 0.5rem;
+  }
+  .simple .wrapper .clock-playbox .playbox .album-cover .cover-img {
+    border-radius: 14px;
+  }
+  .simple .wrapper .clock-playbox .playbox .album-cover .album-like {
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .simple .wrapper .clock-playbox .playbox .album-cover .album-like svg {
+    width: 100%;
+    height: 100%;
+  }
+  .simple .wrapper .clock-playbox .playbox .spotify-svg {
+    gap: 10px;
+  }
+  .simple .wrapper .daily-wrap {
+    padding: 0.75rem;
+  }
+  .simple .wrapper .daily-wrap .daily-svg {
+    width: auto;
+    padding: 1rem;
+  }
+  .simple .wrapper .daily-wrap .daily-svg > div {
+    width: 25px;
+    height: 25px;
+  }
+  .simple .wrapper .daily-wrap .daily-textbox .daily-text p span {
+    font-size: 0.875rem;
+  }
+  .simple .wrapper .daily-wrap .daily-textbox .weather-temp {
+    gap: 1rem;
+    align-items: center;
+  }
+  .simple .wrapper .daily-wrap .daily-textbox .weather-temp > div {
+    gap: 0.75rem;
+  }
+  .simple .wrapper .daily-wrap .daily-textbox .weather-temp > div .text {
+    padding: 3px 6px;
+    margin-bottom: 2px;
+  }
+  .daily-denied {
+    bottom: 0.5rem;
+  }
+  .daily-denied p {
+    display: flex;
+    flex-direction: column;
+  }
+}
