@@ -20,6 +20,7 @@
 <img src="https://img.shields.io/badge/JavaScript-f7df1e?style=flat&logo=javascript&logoColor=white" /> <img src="https://img.shields.io/badge/SCSS-cc6699?style=flat&logo=sass&logoColor=white" />
 - REST API : Geolocation API · Weather API · Spotify API
 - SASS를 사용한 스타일링 css 작성
+- API 데이터와 UI가 자연스럽게 연결된 음악 추천 경험을 제공하는 프로젝트를 보여줍니다.
 </details>
 
 <details>
